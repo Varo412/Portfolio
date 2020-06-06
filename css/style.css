@@ -1,0 +1,26 @@
+body {
+  background-color: #43474d;
+}
+
+#logoText {
+    padding-left:1rem;
+    font-family: Dalgona !important;
+}
+
+header nav {
+  background-color: #2f3236 !important;
+}
+
+header li {
+  padding-right: 1rem;
+}
+
+@font-face {
+  font-family: "Capitalis";
+  src: url("../assets/fonts/CapitalisTypOasis.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Dalgona;
+  src: url("../assets/fonts/Dalgona/Dalgona.ttf") format("truetype");
+}
