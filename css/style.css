@@ -18,17 +18,33 @@ header {
 header #logo {
   padding: 5px 0;
   margin-right: 6px;
-  /* text-align: center; */
   width: 40%;
   min-width: 120px;
 }
 
 header #logo img {
-  width: 100%;
+  width: 75%;
+}
+
+nav ul{
+  margin-right: 5%;
 }
 
 nav li {
-  float: left;
+  margin-left: 3.5rem;
+}
+
+nav ul a {
+  color: white !important;
+  font-family: "DK Lemon Yellow Sun";
+  font-size: 1.6rem;
+}
+
+nav .collapse.show  a{
+  font-size: 1.3rem;
+}
+nav .collapsing  a{
+  font-size: 1.3rem;
 }
 
 @font-face {
@@ -39,4 +55,9 @@ nav li {
 @font-face {
   font-family: Dalgona;
   src: url("../assets/fonts/Dalgona/Dalgona.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DK Lemon Yellow Sun";
+  src: url("../assets/fonts/DK\ Lemon\ Yellow\ Sun.otf") format("truetype");
 }
