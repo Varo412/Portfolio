@@ -1,11 +1,11 @@
 mobileP = {
   device: null,
 };
-
 mobileM = {
   mobileInit: function () {
-    mobileP.device = JSON.stringify(mobileM.detectMobile());
-    console.log(mobileP.device);
+    var deviceQuery = JSON.stringify(mobileM.detectMobile());
+    mobileP.device = (deviceQuery != "null") ? deviceQuery : "[\"Desktop\"]";
+    console.log("Device: " + mobileP.device);
   },
   detectMobile: function () {
     return (
@@ -19,5 +19,4 @@ mobileM = {
     );
   },
 };
-
 mobileM.mobileInit();
