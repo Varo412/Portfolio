@@ -1,29 +1,26 @@
-/* * {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  text-decoration: none;
-  font-family: sans-serif;
-  box-sizing: border-box;
-} */
-
 body {
   background-color: rgba(255, 198, 38, 0.76);
 }
 
+/********** NAVBAR **********/
 header {
   background-color: #393939;
+  user-select: none;
+}
+
+header * {
+  -webkit-user-drag: none;
 }
 
 header #logo {
   padding: 5px 0;
   margin-right: 6px;
-  width: 40%;
+  /* width: 40%; */
   min-width: 120px;
 }
 
 header #logo img {
-  width: 75%;
+  width: 12rem;
 }
 
 nav ul {
@@ -45,7 +42,8 @@ nav ul {
   outline-style: none;
 }
 
-.navbar-toggler:hover, .navbar-toggler:active {
+.navbar-toggler:hover,
+.navbar-toggler:active {
   outline-style: none;
   border: 0.1rem solid rgba(255, 255, 255, 0.5);
   border-bottom-left-radius: 4px !important;
@@ -64,6 +62,17 @@ nav .collapsing a {
   font-size: 1.3rem;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/********** FONTS **********/
 @font-face {
   font-family: "Capitalis";
   src: url("../assets/fonts/CapitalisTypOasis.ttf") format("truetype");
