@@ -26,12 +26,29 @@ header #logo img {
   width: 75%;
 }
 
-nav ul{
+nav ul {
   margin-right: 5%;
 }
 
-nav li {
-  margin-left: 3.5rem;
+@media (min-width: 992px) {
+  nav li {
+    margin-left: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  nav li {
+    margin-left: 1.5rem;
+  }
+}
+.navbar-toggler:focus {
+  outline-style: none;
+}
+
+.navbar-toggler:hover, .navbar-toggler:active {
+  outline-style: none;
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  border-bottom-left-radius: 4px !important;
 }
 
 nav ul a {
@@ -40,10 +57,10 @@ nav ul a {
   font-size: 1.6rem;
 }
 
-nav .collapse.show  a{
+nav .collapse.show a {
   font-size: 1.3rem;
 }
-nav .collapsing  a{
+nav .collapsing a {
   font-size: 1.3rem;
 }
 
