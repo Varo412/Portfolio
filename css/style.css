@@ -1,11 +1,38 @@
 body {
   background-color: rgba(255, 198, 38, 0.76);
+  min-width: 300px;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+.titleHeader {
+  text-align: center;
+  font-family: "DK Lemon Yellow Sun";
+}
+
+.sectionTitle {
+  margin-bottom: 0;
+  font-size: xxx-large;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-family: "DK Lemon Yellow Sun";
+  margin-bottom: 0;
+  font-size: x-large;
+}
+
+.title-hr {
+  width: 23rem;
 }
 
 /********** NAVBAR **********/
 header {
   background-color: #393939;
   user-select: none;
+  margin-bottom: 4%;
 }
 
 header * {
@@ -15,7 +42,6 @@ header * {
 header #logo {
   padding: 5px 0;
   margin-right: 6px;
-  /* width: 40%; */
   min-width: 120px;
 }
 
@@ -70,6 +96,22 @@ nav .collapsing a {
 
 .sticky + .content {
   padding-top: 102px;
+}
+
+/******** CONTACT SECTION ********/
+
+#contact form .row {
+  margin: 2rem 0;
+}
+
+#emailBody {
+  resize: none;
+}
+
+#contactSubmit {
+  height: fit-content;
+  max-inline-size: fit-content;
+  margin-left: auto;
 }
 
 /********** FONTS **********/
