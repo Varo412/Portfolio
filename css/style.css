@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(255, 198, 38, 0.76);
+  background-color: rgba(204,185,135,0.54);
   min-width: 300px;
 }
 
@@ -17,6 +17,13 @@ section {
   font-size: xxx-large;
 }
 
+.titleHeader hr{
+  height: 2px;
+  color: #393939;
+  background-color: #393939;
+  border-width: 0;
+}
+
 .sectionSubtitle {
   text-align: center;
   font-family: "DK Lemon Yellow Sun";
@@ -28,7 +35,11 @@ section {
 header {
   background-color: #393939;
   user-select: none;
-  margin-bottom: 4%;
+  z-index: 5;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /* margin-bottom: 4%; */
 }
 
 header * {
@@ -90,15 +101,19 @@ nav .collapsing a {
   width: 100%;
 }
 
-.sticky + .content {
+/* .content {
+  padding: 16px;
+} */
+
+/* .sticky + .content {
   padding-top: 102px;
-}
+} */
 
 /******** CONTACT SECTION ********/
 
-#contact form .row {
+/* #contact form .row {
   margin: 2rem 0;
-}
+} */
 
 #emailBody {
   resize: none;
@@ -107,7 +122,13 @@ nav .collapsing a {
 #contactSubmit {
   height: fit-content;
   max-inline-size: fit-content;
-  margin-left: auto;
+  /* margin-left: auto; */
+  border-radius: 0.25rem;
+  /* margin-bottom: 2rem; */
+}
+
+form .row * {
+  margin-bottom: 2rem;
 }
 
 /********** FONTS **********/
