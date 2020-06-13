@@ -11,10 +11,10 @@ navbarM = {
     if (window.pageYOffset > navbarP.sticky) {
       navbarP.header.classList.add("sticky");
       if (window.matchMedia("(min-width: 769px)").matches)
-        content.style.paddingTop = "100px";
-      else if(window.matchMedia("(max-width: 768px)").matches) {
+        content.style.paddingTop = "98px";
+      else if (window.matchMedia("(max-width: 768px)").matches) {
         if (navbarP.toggleVal) content.style.paddingTop = "290px";
-        else content.style.paddingTop = "100px";
+        else content.style.paddingTop = "98px";
       }
     } else {
       navbarP.header.classList.remove("sticky");
