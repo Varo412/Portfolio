@@ -1,38 +1,37 @@
-// navbarP = {
-//   header: document.getElementById("#header"),
-//   sticky: header.offsetTop,
-// };
+navbarP = {
+  header: document.querySelector("header"),
+  sticky: document.querySelector("header").offsetTop,
+  toggleButton: document.getElementById("burgerButton"),
+  toggleVal: false,
+};
 
-// navbarM = {
-//   stickBar: function () {
-//     if (window.pageYOffset > navbarP.sticky) {
-//       navbarP.header.classList.add("sticky");
-//     } else {
-//       navbarP.header.classList.remove("sticky");
-//     }
-//   },
-// };
+navbarM = {
+  stickBar: function () {
+    let content = document.querySelector(".content");
+    if (window.pageYOffset > navbarP.sticky) {
+      navbarP.header.classList.add("sticky");
+      if (window.matchMedia("(min-width: 769px)").matches)
+        content.style.paddingTop = "100px";
+      else if(window.matchMedia("(max-width: 768px)").matches) {
+        if (navbarP.toggleVal) content.style.paddingTop = "290px";
+        else content.style.paddingTop = "100px";
+      }
+    } else {
+      navbarP.header.classList.remove("sticky");
+      content.style.paddingTop = "16px";
+    }
+  },
+
+  toggleFun: function () {
+    navbarP.toggleVal = !navbarP.toggleVal;
+    console.log("toggle", navbarP.toggleVal);
+  },
+};
+
+navbarP.toggleButton.onclick = function () {
+  navbarM.toggleFun();
+};
 
 window.onscroll = function () {
   navbarM.stickBar();
 };
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function () {
-  myFunction();
-};
-
-// Get the header
-var header = document.querySelector("header");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
