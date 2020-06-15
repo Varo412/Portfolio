@@ -1,37 +1,20 @@
 navbarP = {
-  header: document.querySelector("header"),
-  sticky: document.querySelector("header").offsetTop,
-  toggleButton: document.getElementById("burgerButton"),
+  toggle: document.getElementById("burgerButton"),
   toggleVal: false,
+  links: document.querySelectorAll("#logo, .nav-link"),
 };
 
 navbarM = {
-  stickBar: function () {
-    let content = document.querySelector(".content");
-    if (window.pageYOffset > navbarP.sticky) {
-      navbarP.header.classList.add("sticky");
-      if (window.matchMedia("(min-width: 769px)").matches)
-        content.style.paddingTop = "98px";
-      else if (window.matchMedia("(max-width: 768px)").matches) {
-        if (navbarP.toggleVal) content.style.paddingTop = "290px";
-        else content.style.paddingTop = "98px";
-      }
-    } else {
-      navbarP.header.classList.remove("sticky");
-      content.style.paddingTop = "16px";
-    }
-  },
-
-  toggleFun: function () {
+  toggleAction: function () {
     navbarP.toggleVal = !navbarP.toggleVal;
-    console.log("toggle", navbarP.toggleVal);
+    console.log(navbarP.toggleVal);
   },
 };
 
-navbarP.toggleButton.onclick = function () {
-  navbarM.toggleFun();
-};
+navbarP.toggle.addEventListener("click", navbarM.toggleAction);
 
-window.onscroll = function () {
-  navbarM.stickBar();
-};
+navbarP.links.forEach((link) => {
+  link.addEventListener("click", function () {
+    if (navbarP.toggleVal) navbarP.toggle.click();
+  });
+});

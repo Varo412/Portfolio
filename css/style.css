@@ -31,8 +31,11 @@ body {
 header {
   background-color: #393939;
   user-select: none;
-  z-index: 5;
+  z-index: 5 !important;
   margin-inline-start: auto !important;
+  position: sticky !important;
+  position: -webkit-sticky !important; /*Safari*/
+  top: 0;
 }
 
 header * {
@@ -87,33 +90,6 @@ nav .collapse.show a {
 nav .collapsing a {
   font-size: 1.3rem;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  inline-size: -webkit-fill-available;
-}
-
-.content {
-  padding: 16px;
-}
-
-/* .sticky + .content {
-  padding-top: 102px;
-} */
-
-/* @media only screen and (min-width: 769px) {
-  .sticky + .content {
-    padding-top: 102px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .sticky + .content {
-    padding-top: 290px;
-  }
-} */
 
 /******** CONTACT SECTION ********/
 
