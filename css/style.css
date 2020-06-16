@@ -3,6 +3,10 @@ body {
   min-width: 300px;
 }
 
+section {
+  margin-bottom: 2rem;
+}
+
 .titleHeader {
   text-align: center;
   font-family: "DK Lemon Yellow Sun";
@@ -101,6 +105,44 @@ nav .collapsing a {
   height: fit-content;
   max-inline-size: fit-content;
   border-radius: 0.25rem;
+  font-family: "Caviar Dreams";
+  font-weight: bold;
+  border: solid 2px #393939;
+  box-shadow: 0.25rem 0.15rem 0.7rem -0.4rem;
+  background-color: #efe9e0;
+  flex: 0 !important;
+}
+
+#contactSubmit:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: solid #393939;
+  -moz-text-decoration-line: underline;
+  -moz-text-decoration-style: solid;
+  -moz-text-decoration-color: #393939;
+  /* text-decoration-style: -moz-solid; */
+}
+
+@media (min-width: 768px) {
+  #contactSubmit {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #contactSubmit {
+    margin: auto;
+  }
+
+  #emailBody {
+    margin-bottom: 1.3rem;
+  }
+}
+
+#contactSubmit span {
+  color: #393939;
+  text-transform: uppercase;
+  vertical-align: text-top;
 }
 
 form .row * {
@@ -109,7 +151,7 @@ form .row * {
 
 /********** FONTS **********/
 @font-face {
-  font-family: "Capitalis";
+  font-family: Capitalis;
   src: url("../assets/fonts/CapitalisTypOasis.ttf") format("truetype");
 }
 
@@ -120,5 +162,17 @@ form .row * {
 
 @font-face {
   font-family: "DK Lemon Yellow Sun";
-  src: url("../assets/fonts/DK\ Lemon\ Yellow\ Sun.otf") format("truetype");
+  src: url("../assets/fonts/DK Lemon Yellow Sun.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../assets/fonts/Caviar Dreams/CaviarDreams.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../assets/fonts/Caviar Dreams/CaviarDreams_Bold.ttf")
+    format("truetype");
+  font-weight: bold;
 }
