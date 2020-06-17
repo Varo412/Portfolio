@@ -71,6 +71,7 @@ nav ul {
     margin-left: 1.5rem;
   }
 }
+
 .navbar-toggler:focus {
   outline-style: none;
 }
@@ -111,16 +112,14 @@ nav .collapsing a {
   box-shadow: 0.25rem 0.15rem 0.7rem -0.4rem;
   background-color: #efe9e0;
   flex: 0 !important;
+  line-height: normal;
+  padding: 0.3rem 0 0.2rem 0;
 }
 
 #contactSubmit:hover {
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-color: solid #393939;
-  -moz-text-decoration-line: underline;
-  -moz-text-decoration-style: solid;
-  -moz-text-decoration-color: #393939;
-  /* text-decoration-style: -moz-solid; */
+  text-decoration-color: #393939;
 }
 
 @media (min-width: 768px) {
@@ -145,8 +144,12 @@ nav .collapsing a {
   vertical-align: text-top;
 }
 
-form .row * {
+form .row {
   margin-bottom: 2rem;
+}
+
+form label span {
+  vertical-align: middle;
 }
 
 /********** FONTS **********/
