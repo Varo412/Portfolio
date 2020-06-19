@@ -103,8 +103,6 @@ nav .collapsing a {
 }
 
 #contactSubmit {
-  height: fit-content;
-  max-inline-size: fit-content;
   border-radius: 0.25rem;
   font-family: "Caviar Dreams";
   font-weight: bold;
@@ -150,32 +148,59 @@ form .row {
 
 form label span {
   vertical-align: middle;
+  font-family: "Caviar Dreams";
+  font-weight: bold;
+}
+
+/********** ELEMENTS ***********/
+.inputField {
+  background-color: #ffffffd4;
+  border: solid 2px #393939;
+  font-family: Quicksand;
+  border-radius: .25rem;
+}
+
+.inputField::placeholder {
+  font-family: "Caviar Dreams";
+  font-style: italic;
 }
 
 /********** FONTS **********/
 @font-face {
   font-family: Capitalis;
-  src: url("../assets/fonts/CapitalisTypOasis.ttf") format("truetype");
+  src: url("../assets/Fonts/CapitalisTypOasis.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Dalgona;
-  src: url("../assets/fonts/Dalgona/Dalgona.ttf") format("truetype");
+  src: url("../assets/Fonts/Dalgona/Dalgona.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "DK Lemon Yellow Sun";
-  src: url("../assets/fonts/DK Lemon Yellow Sun.otf") format("truetype");
+  src: url("../assets/Fonts/DK Lemon Yellow Sun.otf") format("truetype");
 }
 
 @font-face {
   font-family: "Caviar Dreams";
-  src: url("../assets/fonts/Caviar Dreams/CaviarDreams.ttf") format("truetype");
+  src: url("../assets/Fonts/Caviar Dreams/CaviarDreams.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Caviar Dreams";
-  src: url("../assets/fonts/Caviar Dreams/CaviarDreams_Bold.ttf")
+  src: url("../assets/Fonts/Caviar Dreams/CaviarDreams_Bold.ttf")
     format("truetype");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../assets/Fonts/Caviar Dreams/CaviarDreams_Italic.ttf")
+    format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../assets/Fonts/Quicksand/Quicksand_Book.otf") format("truetype");
 }
