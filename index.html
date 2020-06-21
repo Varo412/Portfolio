@@ -78,42 +78,38 @@
       mollit anim id est laborum.
     </div>
   </section>
-  <br> -->
+  <br>-->
 
       <!----------  WHO AM I  ---------->
-      <!-- <section id="whoAmI">
-    <div class="container" style="padding: 10%; width:100%; background-color: blueviolet;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-    </div>
-  </section>
-  <br> -->
+      <section id="whoAmI" class="container">
+        <div class="row">
+          <div class="titleHeader mb-5 mx-auto col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
+            <p class="sectionTitle">Who am I</p>
+            <hr class="title-hr my-0">
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-md-11 col-12">
+            <form>
+              <div class="row align-items-start">
+                <label class="col-md-2 col-12 pl-0"><span>Email:</span></label>
+                <input id="emailSender" class="col-xl-4 col-md-6 col-8 inputField" type="text"
+                  placeholder="Your e-mail direction">
+              </div>
+              <div class="row align-items-start">
+                <label class="col-md-2 col-12 pl-0"><span>Your message:</span></label>
+                <textarea id="emailBody" class="col-md-8 col-12 inputField pt-1" rows="9" type="text"
+                  placeholder="Write your issue here..."></textarea>
+                <button id="contactSubmit" class="col-md-2 col-12 align-self-end px-3" type="submit"><span>submit</span>
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+      <br>
 
       <!----------  PROJECTS  ---------->
       <!-- <section>
@@ -155,7 +151,7 @@
       <section id="contact" class="container">
         <div class="row">
           <div class="titleHeader mb-5 mx-auto col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
-            <p class="sectionTitle">CONTACT</p>
+            <p class="sectionTitle">Contact</p>
             <hr class="title-hr my-0">
             <p class="sectionSubtitle">Contact me sending me an email</p>
           </div>
@@ -166,7 +162,8 @@
             <form>
               <div class="row align-items-start">
                 <label class="col-md-2 col-12 pl-0"><span>Email:</span></label>
-                <input id="emailSender" class="col-xl-5 col-md-6 col-8 inputField" type="text" placeholder="Your e-mail direction">
+                <input id="emailSender" class="col-xl-4 col-md-6 col-8 inputField" type="text"
+                  placeholder="Your e-mail direction">
               </div>
               <div class="row align-items-start">
                 <label class="col-md-2 col-12 pl-0"><span>Your message:</span></label>
@@ -181,7 +178,7 @@
         </div>
       </section>
 
-      <section id="whoAmI">
+      <section id="borrar">
         <div class="container" style="padding: 10%; width:100%; background-color: blueviolet;">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -311,6 +308,26 @@
 
   <script src="js/mobile.js"></script>
   <script src="js/navbar.js"></script>
+
+  <!-- <script>
+
+
+    const gra = function (min, max) {
+      return Math.random() * (max - min) + min;
+    };
+    const init = function () {
+      let items = document.querySelectorAll("section");
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.minHeight = gra(120, 205) + "vh";
+        // items[i].style.background = randomColor({ luminosity: "light" });
+      }
+
+      cssScrollSnapPolyfill();
+    };
+    init();
+
+
+  </script> -->
 
 </body>
 

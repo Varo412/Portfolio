@@ -158,7 +158,8 @@ form label span {
   background-color: #ffffffd4;
   border: solid 2px #393939;
   font-family: Quicksand;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
+  min-width: 220px;
 }
 
 .inputField::placeholder {
