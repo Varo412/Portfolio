@@ -111,6 +111,25 @@ nav .collapsing a {
   border-radius: 2rem;
 }
 
+@media (max-width: 1200px) {
+  #myPic {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #socialButtons {
+    position: relative;
+    bottom: -18px;
+    padding-bottom: 10px;
+  }
+}
+
+.socialButton {
+  margin: 0 8% 0 8%;
+  min-width: 46px;
+}
+
 /******** CONTACT SECTION ********/
 
 #emailBody {
