@@ -96,6 +96,21 @@ nav .collapsing a {
   font-size: 1.3rem;
 }
 
+/******** WhoAmI SECTION ********/
+#resume {
+  background-color: #07071dd3;
+  border-radius: 1rem;
+}
+
+#resume-text {
+  color: white;
+  font-family: Quicksand;
+}
+
+#myPic {
+  border-radius: 2rem;
+}
+
 /******** CONTACT SECTION ********/
 
 #emailBody {
