@@ -7,11 +7,13 @@ navbarP = {
 
 navbarM = {
   toggleAction: function () {
+    // console.log("pre", navbarP.toggleVal)
     navbarP.toggleVal = !navbarP.toggleVal;
+    console.log("post", navbarP.toggleVal)
   },
 };
 
-navbarP.toggle.addEventListener("click", navbarM.toggleAction);
+navbarP.toggle.addEventListener("click", navbarM.toggleAction, false);
 
 navbarP.links.forEach((link) => {
   link.addEventListener("click", function () {
