@@ -101,6 +101,29 @@ nav .collapsing a {
   font-size: 1.3rem;
 }
 
+
+/******** HOME SECTION ********/
+#mouseEffect {
+  overflow: hidden;
+}
+
+#mouseEffect figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#mouseEffect figure img {
+  border-radius: .8rem;
+}
+
+#mouseEffect figure:first-child {
+z-index: 2;
+}
+
+
+
 /******** WhoAmI SECTION ********/
 #resume {
   background-color: #07071dd3;
