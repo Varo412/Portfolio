@@ -13,7 +13,7 @@ navbarM = {
   },
 };
 
-navbarP.toggle.addEventListener("click", navbarM.toggleAction, false);
+navbarP.toggle.addEventListener("click", navbarM.toggleAction);
 
 navbarP.links.forEach((link) => {
   link.addEventListener("click", function () {
