@@ -1,4 +1,5 @@
 navbarP = {
+  headerHeight: document.querySelector("header").offsetHeight,
   toggle: document.getElementById("burgerButton"),
   toggleVal: false,
   links: document.querySelectorAll("#logo, .nav-link"),
@@ -7,7 +8,6 @@ navbarP = {
 navbarM = {
   toggleAction: function () {
     navbarP.toggleVal = !navbarP.toggleVal;
-    console.log(navbarP.toggleVal);
   },
 };
 

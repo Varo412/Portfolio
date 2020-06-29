@@ -1,3 +1,7 @@
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
   background-color: rgba(204, 185, 135, 0.54);
   min-width: 300px;
@@ -5,6 +9,7 @@ body {
 
 section {
   margin-bottom: 2rem;
+  min-height: 100vh;
 }
 
 .titleHeader {
