@@ -1,6 +1,8 @@
 mouseP = {
     area: document.querySelector("#mouseEffect"),
-    figures: document.querySelectorAll("#mouseEffect figure"),
+    images: document.querySelectorAll("#mouseEffect img"),
+    mouseX: null,
+    mouseY: null,
 }
 
 mouseM = {
@@ -12,7 +14,15 @@ mouseM = {
         // });
     },
 
-    mouseMotion: function (mouse) { console.log(mouse.offsetX, mouse.offsetY) }
+    mouseMotion: function (mouse) {
+        mouseP.mouseX = -mouse.offsetX;
+        mouseP.mouseY = -mouse.offsetY;
+
+        mouseP.images.forEach((pic, index) => {
+            pic.style.left = `${mouseP.mouseX / (index * 100 + 50)}%`;
+
+        });
+    }
 }
 
 mouseM.mouseInit();
