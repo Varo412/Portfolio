@@ -16,3 +16,16 @@ mouseM = {
 }
 
 mouseM.mouseInit();
+
+$(document).ready(function () {
+    var imageHeight = $("#mouseEffect img:first-child").height()
+    var imageWidth = $("#mouseEffect img:first-child").width()
+    $("#mouseEffect").css('height', imageHeight);
+    $("#mouseEffect").css('width', imageWidth);
+});
+$(window).resize(function () {
+    var imageHeight = $("#mouseEffect img:first-child").height()
+    var imageWidth = $("#mouseEffect img:first-child").width()
+    $("#mouseEffect").css('height', imageHeight);
+    $("#mouseEffect").css('width', imageWidth);
+});

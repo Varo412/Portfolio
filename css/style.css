@@ -9,7 +9,10 @@ body {
 
 section {
   margin-bottom: 2rem;
-  min-height: 100vh;
+}
+
+section:not(:last-child){
+  /* min-height: 100vh; */
 }
 
 .titleHeader {
@@ -107,18 +110,18 @@ nav .collapsing a {
   overflow: hidden;
 }
 
-#mouseEffect figure {
+#mouseEffect img {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 1;
-}
-
-#mouseEffect figure img {
+  text-align: center;
   border-radius: .8rem;
+  width: 80%;
 }
 
-#mouseEffect figure:first-child {
+#mouseEffect img:first-child {
 z-index: 2;
 }
 
