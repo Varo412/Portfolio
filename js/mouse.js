@@ -16,7 +16,7 @@ mouseM = {
 
     mouseMotion: function (mouse) {
         mouseP.mouseX = -mouse.offsetX;
-        mouseP.mouseY = -mouse.offsetY;
+        // mouseP.mouseY = -mouse.offsetY;
 
         mouseP.images.forEach((pic, index) => {
             pic.style.left = `${mouseP.mouseX / (index * 100 + 50)}%`;
@@ -29,13 +29,13 @@ mouseM.mouseInit();
 
 $(document).ready(function () {
     var imageHeight = $("#mouseEffect img:first-child").height()
-    var imageWidth = $("#mouseEffect img:first-child").width()
+    // var imageWidth = $("#mouseEffect img:first-child").width()
     $("#mouseEffect").css('height', imageHeight);
-    $("#mouseEffect").css('width', imageWidth);
+    // $("#mouseEffect").css('width', imageWidth);
 });
 $(window).resize(function () {
     var imageHeight = $("#mouseEffect img:first-child").height()
-    var imageWidth = $("#mouseEffect img:first-child").width()
+    // var imageWidth = $("#mouseEffect img:first-child").width()
     $("#mouseEffect").css('height', imageHeight);
-    $("#mouseEffect").css('width', imageWidth);
+    // $("#mouseEffect").css('width', imageWidth);
 });
