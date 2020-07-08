@@ -32,13 +32,15 @@ section {
 }
 
 /********** NAVBAR **********/
+
 header {
   background-color: #393939;
   user-select: none;
   z-index: 25 !important;
   margin-inline-start: auto !important;
   position: sticky !important;
-  position: -webkit-sticky !important; /*Safari*/
+  position: -webkit-sticky !important;
+  /*Safari*/
   top: 0;
 }
 
@@ -76,8 +78,7 @@ nav ul {
   outline-style: none;
 }
 
-.navbar-toggler:hover,
-.navbar-toggler:active {
+.navbar-toggler:hover, .navbar-toggler:active {
   outline-style: none;
   border: 0.1rem solid rgba(255, 255, 255, 0.5);
   border-bottom-left-radius: 4px !important;
@@ -92,35 +93,38 @@ nav ul a {
 nav .collapse.show a {
   font-size: 1.3rem;
 }
+
 nav .collapsing a {
   font-size: 1.3rem;
 }
 
-
 /******** HOME SECTION ********/
+
 #mouseEffect {
   overflow: hidden;
-  width: 100vw;
+  position: relative;
+  width: 100%;
+  /* width: 100vw; */
 }
 
 #mouseEffect img {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  /* right: 0; */
   z-index: 1;
-  text-align: center;
+  /* text-align: center; */
   border-radius: .8rem;
-  width: 80%;
+  max-width: 120%;
+  /* width: 125%; */
 }
 
 #mouseEffect img:first-child {
-z-index: 2;
+  z-index: 2;
 }
 
-
-
 /******** WhoAmI SECTION ********/
+
 #resume {
   background-color: #07071dd3;
   border-radius: 1rem;
@@ -154,8 +158,6 @@ z-index: 2;
   min-width: 46px;
 }
 
-
-
 /******** CONTACT SECTION ********/
 
 .carousel {
@@ -171,10 +173,9 @@ z-index: 2;
   background-color: #393939e6;
 }
 
-.carousel-caption p{
+.carousel-caption p {
   margin-bottom: 0;
 }
-
 
 /******** CONTACT SECTION ********/
 
@@ -210,7 +211,6 @@ z-index: 2;
   #contactSubmit {
     margin: auto;
   }
-
   #emailBody {
     margin-bottom: 1.3rem;
   }
@@ -234,6 +234,7 @@ form label span {
 }
 
 /********** ELEMENTS ***********/
+
 .inputField {
   background-color: #ffffffd4;
   border: solid 2px #393939;
@@ -248,6 +249,7 @@ form label span {
 }
 
 /********** FONTS **********/
+
 @font-face {
   font-family: Capitalis;
   src: url("../assets/Fonts/CapitalisTypOasis.ttf") format("truetype");
@@ -270,15 +272,13 @@ form label span {
 
 @font-face {
   font-family: "Caviar Dreams";
-  src: url("../assets/Fonts/Caviar Dreams/CaviarDreams_Bold.ttf")
-    format("truetype");
+  src: url("../assets/Fonts/Caviar Dreams/CaviarDreams_Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Caviar Dreams";
-  src: url("../assets/Fonts/Caviar Dreams/CaviarDreams_Italic.ttf")
-    format("truetype");
+  src: url("../assets/Fonts/Caviar Dreams/CaviarDreams_Italic.ttf") format("truetype");
   font-style: italic;
 }
 

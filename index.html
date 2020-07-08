@@ -44,135 +44,133 @@
       </div>
     </nav>
   </header>
-  <div class="row mx-0 mt-4">
-    <div class="col-10 m-auto content">
+  <!-- <div class="row mx-0 mt-4"> -->
+  <!-- <div class="col-10 m-auto content"> -->
 
-      <!----------  HOME  ---------->
-      <section id="home" class="container">
-        <div id="mouseEffect">
-          <img class="img-fluid mx-auto" src="assets/me.png" alt="Me - foreground">
-          <img class="img-fluid mx-auto" src="assets/water.png" alt="Pinilla's Reservoid - middleground">
-          <img class="img-fluid mx-auto" src="assets/background.png" alt="Guadarrama's Mountains - foreground">
-        </div>
-      </section>
-
-      <!----------  WHO AM I  ---------->
-      <section id="whoAmI" class="container">
-        <div class="row">
-          <div class="titleHeader mb-5 mx-auto col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
-            <p class="sectionTitle">Who am I</p>
-            <hr class="title-hr my-0" />
-          </div>
-        </div>
-
-        <div id="resume" class="row justify-content-around align-items-center pt-4 pb-4">
-          <div class="col-md-4 col-6">
-            <img id="myPic" class="img-fluid" src="assets/myPic.jpg" alt="Picture of me" />
-          </div>
-          <div id="resume-text" class="col-xl-6 pt-3 px-4 flex-wrap">
-            <p>
-              My name is Álvaro Rivas and I'm a senior Computer Science and
-              Software engineering student at Rey Juan Carlos University
-              (Madrid).<br />I truly liked geek stuff since I was a kid, but
-              it was at university when I discovered the development world: it
-              was a crush.<br /><br />This website is my first personal
-              project aside university. As I'm writing these lines I've learnt
-              a lot about web development, but I don't intend to stop here.
-              That's my goal, to become better and better until development
-              has no secrets for me at all.<br /><br />I know it is a very
-              ambicious goal, but it's a very cool one, isn't it?
-            </p>
-            <div id="socialButtons" class="row justify-content-center px-3 pt-3 flex-nowrap">
-              <input class="socialButton" type="image" src="assets/Twitter.png" />
-              <input class="socialButton" type="image" src="assets/LinkedIn.png" />
-              <input class="socialButton" type="image" src="assets/YouTube.png" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <br />
-
-      <!----------  PROJECTS  ---------->
-      <section id="projects" class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="img-fluid rounded"
-                src="https://github.com/CodeURJC-DAW-2019-20/webapp2/raw/master/backend/tenniShip/src/main/resources/static/img/screenshots/Index.png"
-                alt="TenniShip">
-              <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
-                <h5>TenniShip App</h5>
-                <p>Manage your Davis Cup format tennis tournaments.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="img-fluid rounded"
-                src=""
-                alt="TenniShip">
-              <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
-                <h5>TenniShip App</h5>
-                <p>Manage your Davis Cup format tennis tournaments.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="img-fluid rounded"
-                src="https://github.com/CodeURJC-DAW-2019-20/webapp2/raw/master/backend/tenniShip/src/main/resources/static/img/screenshots/Index.png"
-                alt="TenniShip">
-              <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
-                <h5>TenniShip App</h5>
-                <p>Manage your Davis Cup format tennis tournaments.</p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </section>
-      <br />
-
-      <!----------  CONTACT  ---------->
-      <section id="contact" class="container">
-        <div class="row">
-          <div class="titleHeader mb-5 mx-auto col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
-            <p class="sectionTitle">Contact</p>
-            <hr class="title-hr my-0" />
-            <p class="sectionSubtitle">Contact me by sending me an email</p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-xl-8 col-lg-9 col-md-11 col-12">
-            <form>
-              <div class="row align-items-start">
-                <label class="col-md-2 col-12 pl-0"><span>Email:</span></label>
-                <input id="emailSender" class="col-xl-4 col-md-6 col-8 inputField" type="text"
-                  placeholder="Your e-mail direction" />
-              </div>
-              <div class="row align-items-start">
-                <label class="col-md-2 col-12 pl-0"><span>Your message:</span></label>
-                <textarea id="emailBody" class="col-md-8 col-12 inputField pt-1" rows="10" type="text"
-                  placeholder="Write your issue here..."></textarea>
-                <button id="contactSubmit" class="col-md-2 col-12 align-self-end px-3" type="submit">
-                  <span>submit</span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
+  <!----------  HOME  ---------->
+  <section id="home" class="row">
+    <div id="mouseEffect" class="col-12">
+      <img src="assets/fg-max-3.png" alt="Me - foreground">
+      <img src="assets/mg-max-3.png" alt="Pinilla's Reservoid - middleground">
+      <img src="assets/bg-max-3.png" alt="Guadarrama's Mountains - foreground">
     </div>
-  </div>
+  </section>
+
+  <!----------  WHO AM I  ---------->
+  <section id="whoAmI" class="container">
+    <div class="row">
+      <div class="titleHeader mb-5 mx-auto col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
+        <p class="sectionTitle">Who am I</p>
+        <hr class="title-hr my-0" />
+      </div>
+    </div>
+
+    <div id="resume" class="row justify-content-around align-items-center pt-4 pb-4">
+      <div class="col-md-4 col-6">
+        <img id="myPic" class="img-fluid" src="assets/myPic.jpg" alt="Picture of me" />
+      </div>
+      <div id="resume-text" class="col-xl-6 pt-3 px-4 flex-wrap">
+        <p>
+          My name is Álvaro Rivas and I'm a senior Computer Science and
+          Software engineering student at Rey Juan Carlos University
+          (Madrid).<br />I truly liked geek stuff since I was a kid, but
+          it was at university when I discovered the development world: it
+          was a crush.<br /><br />This website is my first personal
+          project aside university. As I'm writing these lines I've learnt
+          a lot about web development, but I don't intend to stop here.
+          That's my goal, to become better and better until development
+          has no secrets for me at all.<br /><br />I know it is a very
+          ambicious goal, but it's a very cool one, isn't it?
+        </p>
+        <div id="socialButtons" class="row justify-content-center px-3 pt-3 flex-nowrap">
+          <input class="socialButton" type="image" src="assets/Twitter.png" />
+          <input class="socialButton" type="image" src="assets/LinkedIn.png" />
+          <input class="socialButton" type="image" src="assets/YouTube.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+
+  <!----------  PROJECTS  ---------->
+  <section id="projects" class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img-fluid rounded"
+            src="https://github.com/CodeURJC-DAW-2019-20/webapp2/raw/master/backend/tenniShip/src/main/resources/static/img/screenshots/Index.png"
+            alt="TenniShip">
+          <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
+            <h5>TenniShip App</h5>
+            <p>Manage your Davis Cup format tennis tournaments.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid rounded" src="" alt="TenniShip">
+          <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
+            <h5>TenniShip App</h5>
+            <p>Manage your Davis Cup format tennis tournaments.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid rounded"
+            src="https://github.com/CodeURJC-DAW-2019-20/webapp2/raw/master/backend/tenniShip/src/main/resources/static/img/screenshots/Index.png"
+            alt="TenniShip">
+          <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
+            <h5>TenniShip App</h5>
+            <p>Manage your Davis Cup format tennis tournaments.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <br />
+
+  <!----------  CONTACT  ---------->
+  <section id="contact" class="container">
+    <div class="row">
+      <div class="titleHeader mb-5 mx-auto col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
+        <p class="sectionTitle">Contact</p>
+        <hr class="title-hr my-0" />
+        <p class="sectionSubtitle">Contact me by sending me an email</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-9 col-md-11 col-12">
+        <form>
+          <div class="row align-items-start">
+            <label class="col-md-2 col-12 pl-0"><span>Email:</span></label>
+            <input id="emailSender" class="col-xl-4 col-md-6 col-8 inputField" type="text"
+              placeholder="Your e-mail direction" />
+          </div>
+          <div class="row align-items-start">
+            <label class="col-md-2 col-12 pl-0"><span>Your message:</span></label>
+            <textarea id="emailBody" class="col-md-8 col-12 inputField pt-1" rows="10" type="text"
+              placeholder="Write your issue here..."></textarea>
+            <button id="contactSubmit" class="col-md-2 col-12 align-self-end px-3" type="submit">
+              <span>submit</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- </div> -->
+  <!-- </div> -->
 
   <!----------  FOOTER  ---------->
   <footer class="page-footer font-small special-color-dark pt-4" STYLE="background-color: #263238;">
