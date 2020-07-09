@@ -104,19 +104,14 @@ nav .collapsing a {
   overflow: hidden;
   position: relative;
   width: 100%;
-  /* width: 100vw; */
 }
 
 #mouseEffect img {
   position: absolute;
   top: 0;
   left: 0;
-  /* right: 0; */
   z-index: 1;
-  /* text-align: center; */
-  border-radius: .8rem;
   max-width: 120%;
-  /* width: 125%; */
 }
 
 #mouseEffect img:first-child {
