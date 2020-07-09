@@ -8,7 +8,6 @@ navbarP = {
 navbarM = {
   toggleAction: function () {
     navbarP.toggleVal = !navbarP.toggleVal;
-    console.log("post", navbarP.toggleVal)
   },
 };
 
