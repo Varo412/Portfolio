@@ -109,7 +109,7 @@ nav .collapsing a {
 #mouseEffect img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
   z-index: 1;
   max-width: 120%;
 }
