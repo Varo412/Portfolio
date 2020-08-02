@@ -181,6 +181,15 @@ nav .collapsing a {
   max-height: 40vh;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  opacity: initial;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  border-radius: 1rem;
+  border: 2px solid white;
+}
+
 /******** CONTACT SECTION ********/
 
 #emailBody {
