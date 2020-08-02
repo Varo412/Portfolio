@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Home</title>
-  <link rel="icon" type="image/png" href="assets/animoji.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
@@ -37,9 +37,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">My Projects</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -48,9 +48,9 @@
   <!----------  HOME  ---------->
   <section id="home" class="row mx-0 mb-3">
     <div id="mouseEffect" class="col-12 mb-4">
-      <img src="assets/fg-max-3.png" alt="Me - foreground">
-      <img src="assets/mg-max-3.png" alt="Pinilla's Reservoid - middleground">
-      <img src="assets/bg-max-3.png" alt="Guadarrama's Mountains - foreground">
+      <img src="assets/home/fg-max-3.png" alt="Me - foreground">
+      <img src="assets/home/mg-max-3.png" alt="Pinilla's Reservoid - middleground">
+      <img src="assets/home/bg-max-3.png" alt="Guadarrama's Mountains - foreground">
     </div>
   </section>
 
@@ -98,7 +98,7 @@
         <hr class="title-hr my-0" />
       </div>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -106,29 +106,31 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="img-fluid rounded"
-            src="https://github.com/CodeURJC-DAW-2019-20/webapp2/raw/master/backend/tenniShip/src/main/resources/static/img/screenshots/Index.png"
-            alt="TenniShip">
-          <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
-            <h5>TenniShip App</h5>
-            <p>Manage your Davis Cup format tennis tournaments.</p>
-          </div>
+          <a href="https://github.com/CodeURJC-DAW-2019-20/webapp2" target="_blank">
+            <img class="img-fluid rounded" src="assets\projects\tenniship.png" alt="TenniShip">
+            <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
+              <h5>TenniShip App</h5>
+              <p>Manage your Davis Cup format tennis tournaments.</p>
+            </div>
+          </a>
         </div>
         <div class="carousel-item">
-          <img class="img-fluid rounded" src="" alt="TenniShip">
-          <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
-            <h5>TenniShip App</h5>
-            <p>Manage your Davis Cup format tennis tournaments.</p>
-          </div>
+          <a href="https://github.com/Group-2-PS/Tetris" target="_blank">
+            <img class="img-fluid rounded" src="assets\projects\TetrisPic.png" alt="Tetrix">
+            <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
+              <h5>Tetrix App</h5>
+              <p>Redesigned tetris app for Android</p>
+            </div>
+          </a>
         </div>
         <div class="carousel-item">
-          <img class="img-fluid rounded"
-            src="https://github.com/CodeURJC-DAW-2019-20/webapp2/raw/master/backend/tenniShip/src/main/resources/static/img/screenshots/Index.png"
-            alt="TenniShip">
-          <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
-            <h5>TenniShip App</h5>
-            <p>Manage your Davis Cup format tennis tournaments.</p>
-          </div>
+          <a href="https://github.com/Varo412/MiniShell" target="_blank">
+            <img class="img-fluid rounded" src="assets\projects\myshell.png" alt="Minishell">
+            <div class="carousel-caption d-none d-md-block py-1 mb-2 rounded">
+              <h5>Mini bash</h5>
+              <p>Basic terminal for Linux.</p>
+            </div>
+          </a>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -144,7 +146,7 @@
   <br />
 
   <!----------  CONTACT  ---------->
-  <section id="contact" class="container">
+  <!-- <section id="contact" class="container">
     <div class="row">
       <div class="titleHeader mb-5 mx-auto col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
         <p class="sectionTitle">Contact</p>
@@ -172,9 +174,7 @@
         </form>
       </div>
     </div>
-  </section>
-  <!-- </div> -->
-  <!-- </div> -->
+  </section> -->
 
   <!----------  FOOTER  ---------->
   <footer class="page-footer font-small special-color-dark pt-4" STYLE="background-color: #263238;">

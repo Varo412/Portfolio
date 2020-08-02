@@ -153,10 +153,11 @@ nav .collapsing a {
   min-width: 46px;
 }
 
-/******** CONTACT SECTION ********/
+/******** CAROUSEL SECTION ********/
 
 .carousel {
   -webkit-user-drag: none;
+  transition: transform 2s ease, opacity .5s ease-out;
 }
 
 .carousel-indicators {
@@ -170,6 +171,14 @@ nav .collapsing a {
 
 .carousel-caption p {
   margin-bottom: 0;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  max-height: 40vh;
 }
 
 /******** CONTACT SECTION ********/
