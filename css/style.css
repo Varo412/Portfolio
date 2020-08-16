@@ -64,13 +64,13 @@ nav ul {
 
 @media (min-width: 992px) {
   nav li {
-    margin-left: 3.5rem;
+    padding: 0 2rem;
   }
 }
 
 @media (max-width: 991px) {
   nav li {
-    margin-left: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -96,6 +96,36 @@ nav .collapse.show a {
 
 nav .collapsing a {
   font-size: 1.3rem;
+}
+
+#navTwo:hover~hr {
+  margin-left: 33% !important;
+}
+
+#navThree:hover~hr {
+  margin-left: 66% !important;
+}
+
+#navFour:hover~hr {
+  margin-left: 75% !important;
+}
+
+nav hr {
+  height: 2px;
+  width: 25%;
+  margin: 0;
+  background: #e3d9be;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.navbar-nav {
+  display: inherit;
+  margin-right: 0;
+}
+
+nav li {
+  display: inline-flex;
 }
 
 /******** HOME SECTION ********/
