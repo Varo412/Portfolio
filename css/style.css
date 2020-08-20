@@ -31,6 +31,10 @@ section {
   font-size: x-large;
 }
 
+a[href] {
+  outline: none;
+}
+
 /********** NAVBAR **********/
 
 header {
@@ -98,7 +102,7 @@ nav .collapsing a {
   font-size: 1.3rem;
 }
 
-#navTwo:hover~hr {
+/* #navTwo:hover~hr {
   margin-left: 33% !important;
 }
 
@@ -108,11 +112,11 @@ nav .collapsing a {
 
 #navFour:hover~hr {
   margin-left: 75% !important;
-}
+} */
 
 nav hr {
   height: 2px;
-  width: 25%;
+  width: 26%;
   margin: 0;
   background: #e3d9be;
   border: none;

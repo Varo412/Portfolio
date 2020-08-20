@@ -28,12 +28,3 @@ mouseM = {
 }
 
 mouseM.mouseInit();
-
-$(document).ready(function () {
-    var imageHeight = $("#mouseEffect img:first-child").height();
-    $("#mouseEffect").css('height', imageHeight);
-});
-$(window).resize(function () {
-    var imageHeight = $("#mouseEffect img:first-child").height();
-    $("#mouseEffect").css('height', imageHeight);
-});
