@@ -7,7 +7,7 @@ function windowWidth() {
     var imageHeight = $("#mouseEffect img:first-child").height();
     $("#mouseEffect").css('height', imageHeight);
 
-    if (window.matchMedia("(max-width: 750px)").matches) {
+    if (window.matchMedia("(max-width: 766px)").matches) {
         navbarP.toggleView = true
         $("#linksBox").css({ "text-align": "center", "margin-right": "0" });
         $("#highlight").css("visibility", "hidden");
