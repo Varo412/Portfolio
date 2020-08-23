@@ -114,13 +114,14 @@ nav .collapsing a {
   margin-left: 75% !important;
 } */
 
-nav hr {
+#highlight {
   height: 2px;
-  width: 26%;
+  width: 100%;
   margin: 0;
   background: #e3d9be;
   border: none;
   transition: .3s ease-in-out;
+  visibility: hidden;
 }
 
 .navbar-nav {
