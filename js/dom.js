@@ -1,7 +1,15 @@
+domP = {
+    sections: document.querySelectorAll("section"),
+    windowHeight: window.innerHeight,
+};
+
 $(document).ready(windowWidth);
 
 
-$(window).resize(windowWidth);
+$(window).resize(function () {
+    domP.windowHeight = window.innerHeight
+    windowWidth();
+});
 
 function windowWidth() {
     var imageHeight = $("#mouseEffect img:first-child").height();

@@ -1,5 +1,6 @@
 scrollP = {
   position: 0,
+  marginOffset: domP.windowHeight * 0.3,
 }
 
 
@@ -41,3 +42,23 @@ $("#logo, .nav-link").click(function (e) {
   }
 });
 
+
+$(window).scroll(function () {
+  var newPosition = scrollP.position;
+  var current = $(document).scrollTop();
+  var sectionsOffset = new Array(domP.sections.length);
+  domP.sections.forEach((section, i) => {
+    sectionsOffset[i] = section.offsetTop;
+  })
+  sectionsOffset.forEach((section, i) => {
+    if (current > section - scrollP.marginOffset) {
+      newPosition = i;
+    }
+  })
+  if (newPosition !== scrollP.position) {
+    console.log("Section scrolled: ", domP.sections[newPosition].id);
+    scrollP.position = newPosition;
+    navbarP.highlightStatus = newPosition;
+    navbarM.resizeHighlight(navbarP.linksli[navbarP.highlightStatus]);
+  }
+})
