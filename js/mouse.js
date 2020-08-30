@@ -23,26 +23,26 @@ mouseM = {
 
     enterIntoArea: function (mouse) {
         mouseP.initialPosition = mouse.offsetX
-        console.log("Cursor entró en ", mouseP.initialPosition);
+        console.log("Cursor entró en ", mouseP.initialPosition, "con offset: ", mouseP.offset);
     },
 
     mouseOut: function (mouse) {
-        console.log("Cursor salió en ", mouse.offsetX);
-        mouseP.finalOffset = mouseP.offset;
-        mouseP.offset = 0;
+        console.log("Ini:", mouseP.initialPosition, "Fin:", mouse.offsetX, "Dif:", mouseP.offset);
+        // mouseP.finalOffset = mouseP.offset;
+        // mouseP.offset = 0;
     },
 
     mouseMotion: function (mouse) {
         // if (mouse.offsetX < mouseP.windowsMotionLimit) {
-        console.log("DESPLAZADO", mouseP.initialPosition + 115, mouse.offsetX, mouse.offsetX - mouseP.initialPosition - 115)
-        mouseP.offset = mouse.offsetX - mouseP.initialPosition - 115;
+        mouseP.offset -= (mouse.offsetX - mouseP.initialPosition - 115);
+        console.log(mouse.offsetX, mouseP.offset);
 
         mouseP.mouseX = -mouse.offsetX;
 
         mouseP.images.forEach((pic, index) => {
             var weighing = index * 180 + 150;
             var value = mouseP.offset / weighing;
-        
+
             pic.style.left = (-value) + "%";
 
         });
