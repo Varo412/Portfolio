@@ -102,18 +102,6 @@ nav .collapsing a {
   font-size: 1.3rem;
 }
 
-/* #navTwo:hover~hr {
-  margin-left: 33% !important;
-}
-
-#navThree:hover~hr {
-  margin-left: 66% !important;
-}
-
-#navFour:hover~hr {
-  margin-left: 75% !important;
-} */
-
 #highlight {
   height: 2px;
   width: 100%;
@@ -131,6 +119,29 @@ nav .collapsing a {
 
 nav li {
   display: inline-flex;
+}
+
+/******** FOOTER ********/
+
+#welcome-message {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+#advise-me {
+  color: #f2df46;
+  text-decoration-skip-ink: revert;
+}
+
+.copyright {
+  color: #ffffff8f;
+  font-size: 12px;
+}
+
+.copyright:hover {
+  color: #ffffffd1;
+  text-decoration: none;
 }
 
 /******** HOME SECTION ********/
